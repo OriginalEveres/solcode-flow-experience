@@ -1,0 +1,145 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #2D132C;
+    font-family: Rozha One, sans-serif;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 38px;
+    text-align: center;
+    color: #EE4540;
+    font-weight: 100;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+input {
+    border: none;
+    background: none;
+    font-family: Rozha One, sans-serif;
+    font-size: 14px;
+    line-height: 20px;  
+    margin-top: 14px;
+    width: 250px;
+    color: #FFAEC8;
+    border-bottom: 1px solid #881238;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px 4px;
+}
+
+a {
+    text-decoration: none;
+}
+
+input:first-of-type {
+    margin-top: 24px;
+}
+
+input::placeholder {
+    color: #FFAEC8;
+}
+
+input:active {
+    outline: none !important;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+p {
+    margin-top: 16px;
+    margin-bottom: 0px;
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: white;
+    max-width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.screen-parts-wrapper {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    transition: 620ms ease;
+}
+
+.text-highlight {
+    color: #FFAEC8 !important;
+}
+
+.arr-down svg{
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    width: 10px;
+    height: 10px;
+    transition: 220ms ease;
+    transform: translateX(-50%) translateY(120%);
+}
+
+.arr-right svg {
+    width: 10px;
+    height: 10px;
+    transition: 220ms ease;
+    transform: rotate(-90deg);
+}
+
+.arr-down:hover svg {
+    transform: translateX(-50%) translateY(180%);
+}
+
+.arr-right:hover svg {
+    transform: translateX(6px) rotate(-90deg);
+}
+
+.arr-down:hover path {
+    stroke: #FFAEC8 !important;
+}
+
+.arr-right:hover path {
+    stroke: #FFAEC8 !important;
+}
+
+.continue-button {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #881238;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: 220ms ease;
+    margin-top: 40px;
+}
+
+.continue-button:hover {
+    color: #FFAEC8;
+}
+
+.screen-part {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.part-wrapper {
+    position: absolute;
+    max-width: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
